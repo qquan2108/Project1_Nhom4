@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "625212493169",
+    "firebase_url": "https://banlaptop-b34ac-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "banlaptop-b34ac",
+    "storage_bucket": "banlaptop-b34ac.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625212493169:android:9c97a84a5a3164575dfad0",
+        "android_client_info": {
+          "package_name": "com.pro.electronic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTXvKdNQWGojBJUmaC6XYxQuLYL5v4pBI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
