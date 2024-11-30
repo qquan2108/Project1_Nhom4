@@ -18,13 +18,13 @@ import com.pro.electronic.utils.Constant;
 import com.pro.electronic.utils.GlobalFunction;
 import com.pro.electronic.utils.StringUtil;
 
-public class LoginActivity extends BaseActivity {
+public class MailLoginActivity extends BaseActivity {
 
     private EditText edtEmail;
     private EditText edtPassword;
     private Button btnLogin;
     private LinearLayout layoutRegister;
-    private TextView tvForgotPassword;
+    private TextView tvForgotPassword, tvBackToLogin;
     private boolean isEnableButtonLogin;
 
     @Override
@@ -42,6 +42,7 @@ public class LoginActivity extends BaseActivity {
         btnLogin = findViewById(R.id.btn_login);
         layoutRegister = findViewById(R.id.layout_register);
         tvForgotPassword = findViewById(R.id.tv_forgot_password);
+        tvBackToLogin = findViewById(R.id.backToLoginText);
     }
 
     private void initListener() {
@@ -101,8 +102,12 @@ public class LoginActivity extends BaseActivity {
                 v -> GlobalFunction.startActivity(this, RegisterActivity.class));
 
         btnLogin.setOnClickListener(v -> onClickValidateLogin());
+
         tvForgotPassword.setOnClickListener(
                 v -> GlobalFunction.startActivity(this, ForgotPasswordActivity.class));
+
+        tvBackToLogin.setOnClickListener(
+                v -> GlobalFunction.startActivity(this, ChooseLoginActivity.class));
     }
 
     private void onClickValidateLogin() {
@@ -151,4 +156,5 @@ public class LoginActivity extends BaseActivity {
         }
         finishAffinity();
     }
+
 }

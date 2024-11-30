@@ -11,8 +11,10 @@
 
     <queries>
         <intent>
-            <action android:name="android.intent.action.VIEW"/>
-            <category android:name="android.intent.category.DEFAULT"/>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+
             <data android:scheme="https" />
         </intent>
     </queries>
@@ -29,118 +31,101 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
-            android:exported="true"
-            android:name="com.pro.electronic.activity.SplashActivity">
+            android:name=".activity.EnterOTP"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OTPLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ChooseLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true">
             <intent-filter>
-                <action
-                    android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.MainActivity" />
-
+            android:name=".activity.MainActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.LoginActivity" />
-
+            android:name=".activity.MailLoginActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.RegisterActivity" />
-
+            android:name=".activity.RegisterActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.ProductDetailActivity" />
-
+            android:name=".activity.ProductDetailActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.VoucherActivity" />
-
+            android:name=".activity.VoucherActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.RatingReviewActivity" />
-
+            android:name=".activity.RatingReviewActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.PaymentMethodActivity" />
-
+            android:name=".activity.PaymentMethodActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.CartActivity" />
-
+            android:name=".activity.CartActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.PaymentActivity" />
-
+            android:name=".activity.PaymentActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.ReceiptOrderActivity" />
-
+            android:name=".activity.ReceiptOrderActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.TrackingOrderActivity" />
-
+            android:name=".activity.TrackingOrderActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.ChangePasswordActivity" />
-
+            android:name=".activity.ChangePasswordActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.FeedbackActivity" />
-
+            android:name=".activity.FeedbackActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.ForgotPasswordActivity" />
-
+            android:name=".activity.ForgotPasswordActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.AddressActivity" />
-
+            android:name=".activity.AddressActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.admin.AdminMainActivity" />
-
+            android:name=".activity.admin.AdminMainActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.admin.AdminFeedbackActivity" />
-
+            android:name=".activity.admin.AdminFeedbackActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.admin.AdminVoucherActivity" />
-
+            android:name=".activity.admin.AdminVoucherActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.admin.AdminAddVoucherActivity" />
-
+            android:name=".activity.admin.AdminAddVoucherActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.admin.AdminAddCategoryActivity" />
-
+            android:name=".activity.admin.AdminAddCategoryActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.admin.AdminAddProductActivity" />
-
+            android:name=".activity.admin.AdminAddProductActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.admin.AdminProductByCategoryActivity" />
-
+            android:name=".activity.admin.AdminProductByCategoryActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.admin.AdminRoleActivity" />
-
+            android:name=".activity.admin.AdminRoleActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.admin.AdminAddRoleActivity" />
-
+            android:name=".activity.admin.AdminAddRoleActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.admin.AdminRevenueActivity" />
-
+            android:name=".activity.admin.AdminRevenueActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name="com.pro.electronic.activity.admin.AdminTopProductActivity" />
+            android:name=".activity.admin.AdminTopProductActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

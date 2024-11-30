@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Electronics Store Pro Java</string>
+    <string name="app_name">PRO1122_BanLaptop</string>
 
     <string name="nav_home">Trang chủ</string>
     <string name="nav_history">Lịch sử</string>
@@ -39,6 +39,7 @@
     <string name="have_not_account">Chưa có tài khoản?</string>
     <string name="login">Đăng Nhập</string>
     <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="backToLogin">Quay lại trang đăng nhập</string>
     <string name="feedback">Phản hồi</string>
     <string name="contact">Liên hệ</string>
     <string name="change_password">Đổi mật khẩu</string>

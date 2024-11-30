@@ -16,7 +16,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.pro.electronic.R;
 import com.pro.electronic.activity.ChangePasswordActivity;
 import com.pro.electronic.activity.FeedbackActivity;
-import com.pro.electronic.activity.LoginActivity;
+import com.pro.electronic.activity.MailLoginActivity;
 import com.pro.electronic.activity.MainActivity;
 import com.pro.electronic.prefs.DataStoreManager;
 import com.pro.electronic.utils.GlobalFunction;
@@ -76,7 +76,7 @@ public class AccountFragment extends Fragment {
 
         FirebaseAuth.getInstance().signOut();
         DataStoreManager.setUser(null);
-        GlobalFunction.startActivity(getActivity(), LoginActivity.class);
+        GlobalFunction.startActivity(getActivity(), MailLoginActivity.class);
         getActivity().finishAffinity();
     }
 }

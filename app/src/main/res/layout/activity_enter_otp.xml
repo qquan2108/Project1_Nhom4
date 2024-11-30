@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận OTP"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp" />
+
+    <!-- Instructions -->
+    <TextView
+        android:id="@+id/tvNhapOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vui lòng nhập mã OTP"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+
+    <!-- OTP Input Field -->
+    <EditText
+        android:id="@+id/otpEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="OTP Code"
+        android:inputType="number"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:maxLength="6"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Verify Button -->
+    <Button
+        android:id="@+id/verifyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận"
+        android:textSize="16sp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:text="Mã OTP không hợp lệ"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"/>
+
+    <!-- Resend OTP Text -->
+    <TextView
+        android:id="@+id/tvResendOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Không nhận được mã OTP? Gửi lại."
+        android:textSize="14sp"
+        android:textColor="?attr/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="8dp" />
+</LinearLayout>

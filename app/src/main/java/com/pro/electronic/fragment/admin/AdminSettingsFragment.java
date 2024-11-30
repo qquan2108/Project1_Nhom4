@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.pro.electronic.R;
-import com.pro.electronic.activity.LoginActivity;
+import com.pro.electronic.activity.MailLoginActivity;
 import com.pro.electronic.activity.admin.AdminFeedbackActivity;
 import com.pro.electronic.activity.admin.AdminRevenueActivity;
 import com.pro.electronic.activity.admin.AdminRoleActivity;
@@ -78,7 +78,7 @@ public class AdminSettingsFragment extends Fragment {
         if (getActivity() == null) return;
         FirebaseAuth.getInstance().signOut();
         DataStoreManager.setUser(null);
-        GlobalFunction.startActivity(getActivity(), LoginActivity.class);
+        GlobalFunction.startActivity(getActivity(), MailLoginActivity.class);
         getActivity().finishAffinity();
     }
 }
