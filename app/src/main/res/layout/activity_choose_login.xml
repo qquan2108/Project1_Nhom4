@@ -4,8 +4,29 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/background_img">
 
+    <!-- ImageView trang trí -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:src="@drawable/img_logo"
+        android:contentDescription="Logo ứng dụng"
+        android:layout_marginBottom="24dp" />
+
+    <!-- TextView chào người dùng -->
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chào mừng bạn!"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Nút đăng nhập Google -->
     <Button
         android:id="@+id/googleLoginButton"
         android:layout_width="match_parent"
@@ -13,6 +34,7 @@
         android:text="Đăng nhập bằng Google"
         android:layout_marginBottom="16dp" />
 
+    <!-- Nút đăng nhập bằng OTP -->
     <Button
         android:id="@+id/otpLoginButton"
         android:layout_width="match_parent"
