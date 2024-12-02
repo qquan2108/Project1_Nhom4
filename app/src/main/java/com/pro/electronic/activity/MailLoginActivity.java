@@ -3,6 +3,7 @@ package com.pro.electronic.activity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -143,7 +144,8 @@ public class MailLoginActivity extends BaseActivity {
                             goToMainActivity();
                         }
                     } else {
-                        showToastMessage(getString(R.string.msg_login_error));
+                        showToastMessage(getString(R.string.msg_login_error) + task.getException());
+                        Log.e("TAG", "loginUserFirebase: " + task.getException());
                     }
                 });
     }
