@@ -43,7 +43,7 @@ public class MailLoginActivity extends BaseActivity {
         btnLogin = findViewById(R.id.btn_login);
         layoutRegister = findViewById(R.id.layout_register);
         tvForgotPassword = findViewById(R.id.tv_forgot_password);
-        tvBackToLogin = findViewById(R.id.backToLoginText);
+        tvBackToLogin = findViewById(R.id.tvBackToLogin);
     }
 
     private void initListener() {
@@ -144,7 +144,7 @@ public class MailLoginActivity extends BaseActivity {
                             goToMainActivity();
                         }
                     } else {
-                        showToastMessage(getString(R.string.msg_login_error) + task.getException());
+                        showToastMessage(getString(R.string.msg_login_error));
                         Log.e("TAG", "loginUserFirebase: " + task.getException());
                     }
                 });

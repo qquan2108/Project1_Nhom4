@@ -4,41 +4,54 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="16dp"
+    android:padding="24dp"
     android:background="@drawable/background_img">
 
-    <!-- ImageView trang trí -->
+    <!-- ImageView Trang Trí -->
     <ImageView
         android:id="@+id/logoImageView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="120dp"
         android:src="@drawable/img_logo"
         android:contentDescription="Logo ứng dụng"
-        android:layout_marginBottom="24dp" />
+        android:layout_marginBottom="32dp"
+        android:scaleType="centerInside" />
 
-    <!-- TextView chào người dùng -->
+    <!-- TextView Chào Người Dùng -->
     <TextView
         android:id="@+id/welcomeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Chào mừng bạn!"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:textColor="@android:color/white"
-        android:layout_marginBottom="24dp" />
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium" />
 
-    <!-- Nút đăng nhập Google -->
+    <!-- Nút Đăng Nhập Google -->
     <Button
         android:id="@+id/googleLoginButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Đăng nhập bằng Google"
-        android:layout_marginBottom="16dp" />
+        android:text="Đăng nhập bằng Email"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:backgroundTint="@color/googleButtonColor"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"
+        android:elevation="4dp" />
 
-    <!-- Nút đăng nhập bằng OTP -->
+    <!-- Nút Đăng Nhập Bằng OTP -->
     <Button
         android:id="@+id/otpLoginButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Đăng nhập bằng OTP" />
-
+        android:text="Đăng nhập bằng OTP"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:backgroundTint="@color/otpButtonColor"
+        android:textColor="@android:color/white"
+        android:elevation="4dp" />
 </LinearLayout>

@@ -3,102 +3,113 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@drawable/bg_gradient">
 
+    <!-- Form Đăng Nhập -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="@dimen/define_dimen_18">
+        android:padding="24dp">
 
+        <!-- Logo Ứng Dụng -->
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:src="@drawable/ic_logo"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
             tools:ignore="ContentDescription" />
 
+        <!-- Email -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/email"
-            android:layout_marginTop="@dimen/define_dimen_20"
+            android:layout_marginBottom="8dp"
             android:textColor="@color/textColorHeading"
-            android:textSize="@dimen/text_size_xsmall"/>
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/edt_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/define_dimen_5"
-            android:padding="@dimen/define_dimen_14"
+            android:padding="16dp"
             android:background="@drawable/bg_white_corner_16_border_gray"
             android:hint="@string/hint_email"
-            android:imeOptions="actionNext"
             android:inputType="textEmailAddress"
             android:textColorHint="@color/textColorAccent"
             android:textColor="@color/textColorHeading"
-            android:textSize="@dimen/text_size_small"
+            android:textSize="14sp"
             tools:ignore="Autofill" />
 
+        <!-- Mật Khẩu -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/password"
-            android:layout_marginTop="@dimen/define_dimen_12"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
             android:textColor="@color/textColorHeading"
-            android:textSize="@dimen/text_size_xsmall"/>
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/edt_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/define_dimen_5"
-            android:padding="@dimen/define_dimen_14"
+            android:padding="16dp"
             android:background="@drawable/bg_white_corner_16_border_gray"
             android:hint="@string/hint_password"
-            android:imeOptions="actionDone"
             android:inputType="textPassword"
             android:textColorHint="@color/textColorAccent"
             android:textColor="@color/textColorHeading"
-            android:textSize="@dimen/text_size_small"
+            android:textSize="14sp"
             tools:ignore="Autofill" />
 
+        <!-- Nút Đăng Nhập -->
         <Button
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/define_dimen_30"
-            android:textAllCaps="false"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
             android:background="@drawable/bg_button_disable_corner_16"
             android:text="@string/login"
             android:textColor="@color/white"
-            android:textSize="@dimen/text_size_small" />
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:elevation="4dp" />
 
+        <!-- Quên Mật Khẩu -->
         <TextView
             android:id="@+id/tv_forgot_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/define_dimen_20"
-            android:padding="@dimen/define_dimen_10"
-            android:textSize="@dimen/text_size_small"
-            android:textColor="@color/textColorPrimary"
-            android:textStyle="bold"
-            android:text="@string/forgot_password"/>
-
-        <TextView
-            android:id="@+id/backToLoginText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/backToLogin"
-            android:layout_marginTop="@dimen/define_dimen_20"
-            android:padding="@dimen/define_dimen_10"
-            android:textSize="@dimen/text_size_small"
-            android:textColor="#3F51B5"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
             android:textStyle="bold" />
     </LinearLayout>
 
+    <!-- Nút Quay Lại -->
+    <TextView
+        android:id="@+id/tvBackToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="@string/backToLogin"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:focusable="true" />
     <LinearLayout
         android:id="@+id/layout_register"
         android:layout_width="match_parent"

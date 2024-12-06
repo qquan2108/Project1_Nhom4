@@ -22,4 +22,7 @@
     <color name="blue">#3F51B5</color>
     <color name="black_overlay">#667C7474</color>
     <color name="dividerColor">#BDBDBD</color>
+    <color name="googleButtonColor">#DB4437</color>
+    <color name="otpButtonColor">#2196F3</color>
+
 </resources>
