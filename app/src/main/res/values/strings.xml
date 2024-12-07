@@ -16,7 +16,6 @@
     <string name="title_payment_method_zalopay">ZaloPay</string>
     <string name="title_payment_method_zalopay_desc">(Tự động xác nhận)</string>
 
-    // action
     <string name="action_ok">Đồng ý</string>
     <string name="action_cancel">Hủy</string>
     <string name="action_add">Thêm</string>

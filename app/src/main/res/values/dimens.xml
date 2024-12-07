@@ -28,7 +28,6 @@
     <dimen name="define_dimen_250">250dp</dimen>
     <dimen name="define_dimen_300">300dp</dimen>
 
-    <!-- Text size -->
     <dimen name="text_size_xxtiny">4sp</dimen>
     <dimen name="text_size_xtiny">6sp</dimen>
     <dimen name="text_size_tiny">8sp</dimen>
