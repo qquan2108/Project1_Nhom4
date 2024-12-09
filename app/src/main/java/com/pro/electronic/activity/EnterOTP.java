@@ -22,7 +22,7 @@ public class EnterOTP extends AppCompatActivity {
     private Button verifyButton;
     private TextView errorMessage;
     private FirebaseAuth mAuth;
-    private String verificationId; // Dùng để xác thực mã OTP
+    private String verificationId;
     private String phoneNumber;
 
     @SuppressLint("MissingInflatedId")

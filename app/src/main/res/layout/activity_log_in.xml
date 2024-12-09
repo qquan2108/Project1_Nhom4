@@ -9,8 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:gravity="center"
+        android:layout_centerInParent="true"
         android:orientation="vertical"
         android:padding="24dp">
 
@@ -97,24 +97,27 @@
     </LinearLayout>
 
     <!-- Nút Quay Lại -->
+
     <TextView
         android:id="@+id/tvBackToLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="@dimen/define_dimen_80"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_centerInParent="true"
         android:text="@string/backToLogin"
         android:textColor="@color/textColorPrimary"
         android:textSize="14sp"
-        android:textStyle="bold"
-        android:clickable="true"
-        android:focusable="true" />
+        android:textStyle="bold" />
+
     <LinearLayout
         android:id="@+id/layout_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-3dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="@dimen/define_dimen_18">
