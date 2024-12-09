@@ -48,12 +48,14 @@ public class OTPLoginActivity extends AppCompatActivity {
         sendOTPButton.setOnClickListener(view -> {
             String phoneNumber = phoneNumberEditText.getText().toString().trim();
             if (!phoneNumber.isEmpty()) {
-                Log.d(TAG, "Sending OTP to: " + phoneNumber);
-                sendOTP(phoneNumber);
+                String formattedPhoneNumber = formatPhoneNumber(phoneNumber);
+                Log.d(TAG, "Sending OTP to: " + formattedPhoneNumber);
+                sendOTP(formattedPhoneNumber);
             } else {
                 Toast.makeText(this, "Vui lòng nhập số điện thoại", Toast.LENGTH_SHORT).show();
             }
         });
+
     }
 
     private void sendOTP(String phoneNumber) {
@@ -97,6 +99,14 @@ public class OTPLoginActivity extends AppCompatActivity {
             }
         });
     }
+
+    private String formatPhoneNumber(String phoneNumber) {
+        if (phoneNumber.startsWith("0")) {
+            return "+84" + phoneNumber.substring(1);
+        }
+        return phoneNumber;
+    }
+
 
     private void goToEnterOTP(String phone, String verificationId) {
         Intent intent = new Intent(this, EnterOTP.class);

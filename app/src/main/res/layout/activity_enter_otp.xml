@@ -39,7 +39,7 @@
 
         <!-- OTP Input Field -->
         <EditText
-            android:id="@+id/otpEditText"
+            android:id="@+id/etOTP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nhập mã OTP"
@@ -53,7 +53,7 @@
 
         <!-- Verify Button -->
         <Button
-            android:id="@+id/verifyButton"
+            android:id="@+id/btnVerify"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Xác nhận"
