@@ -35,9 +35,7 @@ public class OTPLoginActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        phoneNumberEditText = findViewById(R.id.phoneNumberEditText);
-        sendOTPButton = findViewById(R.id.sendOTPButton);
-        backToLoginText = findViewById(R.id.backToLoginText);
+        initUi();
 
         backToLoginText.setOnClickListener(view -> {
             Intent intent = new Intent(this, ChooseLoginActivity.class);
@@ -55,6 +53,13 @@ public class OTPLoginActivity extends AppCompatActivity {
                 Toast.makeText(this, "Vui lòng nhập số điện thoại", Toast.LENGTH_SHORT).show();
             }
         });
+
+    }
+
+    private void initUi(){
+        phoneNumberEditText = findViewById(R.id.phoneNumberEditText);
+        sendOTPButton = findViewById(R.id.sendOTPButton);
+        backToLoginText = findViewById(R.id.backToLoginText);
 
     }
 

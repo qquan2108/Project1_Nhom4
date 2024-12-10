@@ -17,8 +17,7 @@ public class ChooseLoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_login);
 
-        googleLoginButton = findViewById(R.id.googleLoginButton);
-        otpLoginButton = findViewById(R.id.otpLoginButton);
+        initUi();
 
         googleLoginButton.setOnClickListener(view -> {
             Intent intent = new Intent(ChooseLoginActivity.this, MailLoginActivity.class);
@@ -29,5 +28,10 @@ public class ChooseLoginActivity extends AppCompatActivity {
             Intent intent = new Intent(ChooseLoginActivity.this, OTPLoginActivity.class);
             startActivity(intent);
         });
+    }
+
+    private void initUi() {
+        googleLoginButton = findViewById(R.id.googleLoginButton);
+        otpLoginButton = findViewById(R.id.otpLoginButton);
     }
 }
