@@ -159,7 +159,7 @@
     <string name="label_discount">Giảm giá (*)</string>
     <string name="label_promotion">Khuyến mại</string>
     <string name="label_order_minimum">Áp dụng cho hóa đơn tổi thiểu</string>
-    <string name="label_currency">.000vnd</string>
+    <string name="label_currency">$</string>
     <string name="label_add_voucher">Thêm khuyến mại</string>
     <string name="label_update_voucher">Chỉnh sửa khuyến mại</string>
     <string name="label_name">Tên (*)</string>

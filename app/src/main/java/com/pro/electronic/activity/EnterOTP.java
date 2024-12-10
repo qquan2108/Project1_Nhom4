@@ -59,7 +59,7 @@ public class EnterOTP extends AppCompatActivity {
     }
 
     private void getDataIntent() {
-        mPhoneNumber = getIntent().getStringExtra("phone_Number");
+        mPhoneNumber = getIntent().getStringExtra("phone");
         mVerificationId = getIntent().getStringExtra("verificationId");
     }
 
@@ -138,6 +138,7 @@ public class EnterOTP extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra("phoneNumber", phoneNumber);
         startActivity(intent);
+        Toast.makeText(this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
         finish();
     }
 }
